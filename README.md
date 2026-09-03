@@ -29,7 +29,7 @@
 
   <img width="801" height="794" alt="image" src="https://github.com/user-attachments/assets/be37bc90-936f-4ddf-b2d2-2f17f2c34f44" />
 
-  在第二terminal嘗試登入root，並故意失敗
+  在第二terminal嘗試登入root，並故意失敗  
 
   <img width="800" height="795" alt="image" src="https://github.com/user-attachments/assets/2b91dd28-314f-4735-87bb-431b8736b35c" />
 
@@ -37,4 +37,18 @@
 
   <img width="802" height="795" alt="image" src="https://github.com/user-attachments/assets/b432b34f-5883-4dd5-9f68-d8b0da546fad" />
 
-## 3-3：過濾 SSH 設定檔
+  ## 3-3：過濾 SSH 設定檔
+  這裡的 grep -v表示反向選擇，將符合條件的隱藏顯示。完整指令執行後如下圖:  
+
+  <img width="794" height="215" alt="image" src="https://github.com/user-attachments/assets/bef40b48-0b3d-4e41-8e89-06d9893bff1f" />
+
+  < ^\s*(#|$) >篩選條件為: 
+  |------------|------------|
+  |^       | 一行開頭
+  |\s*     | 允許前面有空白
+  |#       | 註解
+  |"|"     | 或
+  |$       | 空白行/行尾
+
+  舉例，若移除空白行篩選，結果如下:  
+  <img width="674" height="758" alt="image" src="https://github.com/user-attachments/assets/0f320968-d560-44ef-a66c-5dfa09a3d72d" />
