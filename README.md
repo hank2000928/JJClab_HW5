@@ -53,3 +53,27 @@
 
   舉例，若移除空白行篩選，結果如下:  
   <img width="674" height="758" alt="image" src="https://github.com/user-attachments/assets/0f320968-d560-44ef-a66c-5dfa09a3d72d" />
+
+  ## 3-4. more 分頁瀏覽
+  | 操作  | 按鍵      |
+| --- | ------- |
+| 下一頁 | `Space` |
+| 下一行 | `Enter` |
+| 離開  | `q`     |
+
+  ## 3-5. less 瀏覽與搜尋
+  | 功能      | 按鍵                   |
+| ------- | -------------------- |
+| 下一行     | `↓` 或 `j`            |
+| 上一行     | `↑` 或 `k`            |
+| 下一頁     | `Space` / `PageDown` |
+| 上一頁     | `PageUp`             |
+| 檔案開頭    | `g`                  |
+| 檔案結尾    | `G`                  |
+| 搜尋 root | `/root` → Enter      |
+| 下一個搜尋結果 | `n`                  |
+| 上一個搜尋結果 | `N`                  |
+| 搜尋 bash | `/bash` → Enter      |
+| 離開      | `q`                  |
+
+  
