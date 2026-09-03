@@ -15,3 +15,8 @@
   |3-1-5|只顯示最後 3 行|tail -n 3 log.txt|
   |3-1-6|找出所有含 ERROR 的行|grep ERROR log.txt|
   |3-1-7|找出所有不是 INFO 的行|grep -v INFO log.txt|
+
+  以上小題執行結果: 
+  
+  <img width="499" height="539" alt="image" src="https://github.com/user-attachments/assets/7347284f-cd8d-47ce-b262-a27e8bf085bf" />
+
