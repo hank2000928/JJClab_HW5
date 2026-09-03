@@ -80,3 +80,27 @@
   
 # 練習 5. 指令列：網路、防火牆、zypper
 ## 5-1. 網路介面（ifcfg + wicked）
+執行<sudo vi /etc/sysconfig/network/ifcfg-eth0>，進入insert mode，修改為下圖並檢查:  
+<img width="670" height="131" alt="image" src="https://github.com/user-attachments/assets/ac4cdf76-256d-4c5a-8a87-2119c75f0711" />
+<img width="655" height="182" alt="image" src="https://github.com/user-attachments/assets/05c6872a-4a60-4244-bf97-a9b4b89954d4" />
+
+再加入gateway設定:  
+<img width="662" height="157" alt="image" src="https://github.com/user-attachments/assets/3b87c3e2-513f-471f-8911-a7a3b32c9527" />
+
+確認 Static IP 已經套用成功。接下來還要確認 Gateway:  
+<img width="655" height="214" alt="image" src="https://github.com/user-attachments/assets/68f8fcc2-cf50-4339-b3cb-7c2f64433204" />
+
+建立 eth0 的永久 Default Route:  
+<img width="657" height="356" alt="image" src="https://github.com/user-attachments/assets/1e773260-e8e7-410f-b5e9-cc842834222a" />
+
+重新載入 eth0:  
+<img width="656" height="491" alt="image" src="https://github.com/user-attachments/assets/91cd60d9-e795-4888-8803-2f2cf5229a81" />
+
+完成 wicked 的 up / down / show:  
+<img width="659" height="218" alt="image" src="https://github.com/user-attachments/assets/7f9cd929-b04b-4f17-badd-9c288cfb95c6" />
+
+透過重啟eth0，確認Static IP:  
+<img width="651" height="595" alt="image" src="https://github.com/user-attachments/assets/2f547aa5-3cd8-4e9f-9268-1119e67e11da" />
+
+Static 改回 DHCP
+<img width="644" height="370" alt="image" src="https://github.com/user-attachments/assets/05fb56be-be48-483f-81cf-814aef87d696" />
